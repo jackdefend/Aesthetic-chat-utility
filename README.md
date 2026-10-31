@@ -13,7 +13,7 @@ messages, teams and waypoint data.
 
 - **One name color per player**, used everywhere: chat, tab list, locator bar dot and the name above the head.
 - **Separate nickname color**, so a player can have, for example, a green username and a gold nickname.
-- **Nicknames** shown as `<Jackdefend (jack) > message` (the format is configurable).
+- **Nicknames** shown as `<Player (nickname) > message` (the format is configurable).
 - **Locator bar dot colors**, including keeping the vanilla color when you want to, and optionally replacing colors
   set with `/waypoint modify`.
 - **Name above the head** colored through 16 hidden teams (the closest of Minecraft's 16 base colors).
@@ -123,7 +123,7 @@ is replaced when `overrides.waypointColor` is `true` (checked about every two se
 A nickname is shown after the username using the template in `nickname.format`:
 
 - `{name}` is the username and `{nick}` is the nickname.
-- `"{name} ({nick}) "` gives `<Jackdefend (jack) > message` (the trailing space puts it before the `>`).
+- `"{name} ({nick}) "` gives `<Player (nickname) > message` (the trailing space puts it before the `>`).
 - `"{nick}"` shows only the nickname.
 
 The nickname can have its own color (`/nickcolor`). Until a player chooses one, `nickname.defaultColor` applies:
